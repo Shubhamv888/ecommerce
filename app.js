@@ -20,6 +20,11 @@ const dotenv = require('dotenv').config();
 // whenever we use a mongodb operation using mongoose , it always returns a promise
 // it is always an async function because searching/doing any operation in a db takes time
 
+app.get('/' , (req,res) => {
+    res.redirect('/products');
+})
+
+
 //defining the express session object
 // Date.now() gives the current time in ms and we define the expiry and the maxAge of the session in milliseconds only
 let configSession = {
