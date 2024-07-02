@@ -1,0 +1,87 @@
+:root{
+    --main-color: #0077b6;
+}
+main{
+    margin-top: 5.5rem;
+}
+
+.img{
+    height: 300px;
+    width: 100%;
+
+}
+
+.product-card .btnn{
+    background-color: var(--main-color) ;
+}
+
+form.needs-validation {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 5vh auto 0 auto;
+  }
+  
+  form.needs-validation div {
+    margin-bottom: 15px;
+  }
+  
+  form.needs-validation label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form.needs-validation input[type="text"],
+  form.needs-validation textarea {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  form.needs-validation input[type="text"]:focus,
+  form.needs-validation textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  form.needs-validation .valid-feedback,
+  form.needs-validation .invalid-feedback {
+    display: none;
+    font-size: 14px;
+  }
+  
+  form.needs-validation input:valid + .valid-feedback {
+    display: block;
+    color: green;
+  }
+  
+  form.needs-validation input:invalid + .invalid-feedback {
+    display: block;
+    color: red;
+  }
+  
+  form.needs-validation button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  form.needs-validation button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

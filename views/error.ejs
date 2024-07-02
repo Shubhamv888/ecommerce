@@ -1,0 +1,13 @@
+<%-include('partials/header')%>
+<%-include('partials/navbar')%>
+<%-include('partials/flash')%>
+
+    <h1>ERROR</h1>
+
+    <div class="alert alert-danger" role="alert">
+        <% if(err && err.length){ %>
+            <h2><%=err%></h2>
+        <% } %>
+    </div>
+
+<%-include('partials/footer')%>

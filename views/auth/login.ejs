@@ -1,0 +1,29 @@
+<%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+<%-include('../partials/flash')%>
+
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-6 mx-auto">
+            <h1 class="display-6">Login</h1>
+            <form action="/login" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username: </label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Name of User" required>
+                </div>
+                <!-- <div class="mb-3">
+                    <label for="mail" class="form-label">Email: </label>
+                    <input type="email" class="form-control" name="email" id="mail" placeholder="Email of the user" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender: </label>
+                    <input type="text" class="form-control" name="gender" id="gender" placeholder="gender of the user" required>
+                </div> -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password: </label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="password of the user" required>
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">Login</button>
+                <br>
+                <a href="/register" >Dont have an account?</a>  
+            </form>
+<%-include('../partials/footer')%>

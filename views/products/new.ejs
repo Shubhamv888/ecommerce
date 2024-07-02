@@ -1,0 +1,61 @@
+<%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+<%-include('../partials/flash')%>
+
+    
+
+    <form class="needs-validation" action="/products" method="POST" novalidate>
+        <h1>Add a new product</h1>
+        <div>
+            <label for="naam">Name: </label>
+            <input type="text" name="name" id="naam" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter a Name
+            </div>
+        </div>
+        <div>
+            <label for="pic">Img: </label>
+            <input type="text" name="img" id="pic">
+        </div>
+        <div>
+            <label for="daam">Price: </label>
+            <input type="text" name="price" id="daam" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter a Price
+            </div>
+        </div>
+        <div>
+            <label for="description">Desc: </label>
+            <textarea rows = "3" name="desc" id="description"></textarea>
+        </div>
+        <button type="submit">Add new product</button>
+
+
+        <script>
+            (() => {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+        </script>
+
+<%-include('../partials/footer')%>
